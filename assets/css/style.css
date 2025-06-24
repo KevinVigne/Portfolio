@@ -1,0 +1,33 @@
+body{
+    background: linear-gradient( to right, #131022, #110F60);
+    color: white;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size:  28px;
+}
+ul li{
+    background: linear-gradient(to right ,#110F60 , #5450BE);
+    border-radius: 30px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.apropos{
+    width: 289px;
+    height: 72px;
+}
+.contact{
+    width: 187px;
+    height: 72px;
+}
+.projets{
+    width: 233px;
+    height: 72px;
+}
