@@ -1,16 +1,51 @@
+/*Importation de la police "Liter"*/
+@import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
+*  {
+    /* Inclut le padding et la bordure dans la largeur et la hauteur de l'élément.
+      Cela simplifie le calcul des tailles et évite les débordements inattendus. */
+    box-sizing: border-box;
+    /* Aligne les éléments sur la ligne de base du texte environnant, pour un rendu plus cohérent. */
+    vertical-align: baseline;
+    /*Enlève toutes les marges et met le contenu au centre des container*/
+    margin: 0 auto;
+}
+
+/* création des colonnes en % avec 6 chiffres après la virgule*/
+.col-1 {width: 8.333333%;}
+.col-2 {width: 16.666666%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.333333%;}
+.col-5 {width: 41.666666%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.333333%;}
+.col-8 {width: 66.666666%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.333333%;}
+.col-11 {width:91.666666%;}
+.col-12 {width: 100%;}
+/*Application de la police ainsi que Création de container*/
+.container{
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Liter", sans-serif;
+}
+/*Création d'une disposition en ligne*/
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*Application de la couleur de fond de la page*/
 body{
     background: linear-gradient( to right, #131022, #110F60);
     color: white;
 }
-ul{
+/*Organisation de la Barre de navigation en En-tête*/
+.nav-header{
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
     font-size:  28px;
-}
-ul li{
-    background: linear-gradient(to right ,#110F60 , #5450BE);
-    border-radius: 30px;
 }
 ul li a{
     text-decoration: none;
@@ -19,15 +54,35 @@ ul li a{
     text-align: center;
     justify-content: center;
 }
-.apropos{
-    width: 289px;
-    height: 72px;
+/*Justifie le contenu au centre*/
+.center{
+    display: flex;
+    justify-content: center;
 }
-.contact{
-    width: 187px;
-    height: 72px;
+/*Créée une marge au dessus de l'item*/
+.margin-bottom{
+    margin-bottom: 15px;
 }
-.projets{
-    width: 233px;
-    height: 72px;
+/*Créée une marge en dessous de l'item*/
+.margin-top{
+    margin-top: 20px;
+}
+/* Arrondissement des angles et ajout de la couleur de fond des blocs*/
+.item-color{
+    background: linear-gradient(#110F60 , #5450BE);
+    border-radius: 30px;
+}
+.list{
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Aggrandis la taille du footer*/
+.height-footer{
+    height: 50px;
+}
+/*Créée une marge à gauche et à droite
+.margin-x{
+    margin: ;
 }
