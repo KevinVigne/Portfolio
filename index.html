@@ -3,67 +3,70 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>VIGNE Kevin</title>
+        <title>Portfolio</title>
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <header>
-            <nav class="container">
-                <ul class="row">
-                    <li><a class="apropos col-3" href="www.google.com">Mes Projets</a></li>
-                    <li><a class="contact col-3" href="www.amazon.com">À Propos</a></li>
-                    <li><a class="projets col-3 " href="www.wikipedia.fr">Contact</a></li>
+        <header class=" container margin-bottom margin-top">
+            <nav>
+                <ul class="row margin-bottom nav-header">
+                    <li class="col-3"><a class="item-color" href="#projets">Mes Projets</a></li>
+                    <li class="col-3"><a class="item-color" href="#apropos">À Propos</a></li>
+                    <li class="col-3"><a class="item-color" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section class="container row">
-                <div class="col-12 column margin-y">
-                    <h1 class="center margin-y">Kevin Vigne</h1>
-                    <h2 class="center ">Développeur Web et Web mobile</h2>
+        <main class="container">
+            <h1 class="col-12 center margin-bottom">Kevin Vigne</h1>
+            <h2 class="col-12 center margin-bottom  ">Développeur Web et Web Mobile</h2>
+            <div class="row margin-bottom">
+                <!-- Projet Preview -->
+                <div class="col-5 center item-color fill-height">
+                    <p>Project 1 Preview</p>
                 </div>
-                <div class="col-6 center margin-y">
-                    <h3>projet 1 preview</h3>
+                <div class="col-5 center item-color fill-height">
+                    <p>Project 2 Preview</p>
                 </div>
-                <div class="col-6 center margin-y">
-                    <h3>projet 2 preview</h3>
+            </div>
+            <div class="row margin-bottom">
+                <div class="col-5 center item-color fill-height">
+                    <p>Project 3 Preview</p>
                 </div>
-                <div class="col-6 center margin-y">
-                    <h3>projet 3 preview</h3>
+                <div class="col-5 center item-color fill-height">
+                    <p>Project 4 Preview</p>
                 </div>
-                <div class="col-6 center margin-y">
-                    <h3>projet 4 preview</h3>
+            </div>
+            <!-- Mes Projets -->
+            <div class="container">
+                <h2 class="center margin-top margin-bottom" id="projets">Mes Projets</h2>
+                <div class="col-10 center margin-bottom item-color fill-height">
+                    <p>Projet 1</p>
                 </div>
-            </section>
-            <section>
-                <h2>Mes projets</h2>
-                <div>
-                    <h3>projet 1</h3>
+                <div class="col-10 center margin-bottom item-color fill-height">
+                    <p>Projet 2</p>
                 </div>
-                <div>
-                    <h3>projet 2</h3>
+                <div class="col-10 center margin-bottom item-color fill-height">
+                    <p>Projet 3</p>
                 </div>
-                <div>
-                    <h3>projet 3</h3>
+                <div class="col-10 center margin-bottom item-color fill-height">
+                    <p>Projet 4</p>
                 </div>
-                <div>
-                    <h3>projet 4</h3>
-                </div>
-            </section>
-            <section>
-                <h2>À propos</h2>
-                <div></div>
-                <div></div>
-            </section>
-            <section>
-                <div>
-                    <h2>Contact</h2>
-                    <img src="assets/img/github.svg" alt="Logo Github">
-                    <img src="assets/img/linkedin.svg" alt="Logo Linkedin">
-                    <img src="assets/img/gmail.svg" alt="Logo Gmail">
-                </div>
-            </section>
+            </div>
+            <!-- À Propos -->
+            <div class="col-10 center item-color fill-height" id="apropos">
+                <p>A PROPOS</p>
+            </div> 
         </main>
+        <!-- Contact -->
+        <footer class="margin-top margin-x">
+            <h2 class="center margin-bottom" id="contact">Contact</h2>
+            <ul class="list row item-color height-footer">
+                    <li class="col-4"><a class="col-12" href="https://github.com/KevinVigne"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+                    <li class="col-4"><a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+                    <li class="col-4"><a href="mailto:kev.vigne@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a></li>
+                </ul>
+        </footer>
         <script type="text/javascript" src="assets/js/script.js"></script>
+        <script src="https://kit.fontawesome.com/95cc56275a.js" crossorigin="anonymous"></script>
     </body>
 </html>
