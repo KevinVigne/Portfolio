@@ -1,72 +1,282 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <header class=" container margin-bottom margin-top">
-            <nav>
-                <ul class="row margin-bottom nav-header">
-                    <li class="col-3"><a class="item-color" href="#projets">Mes Projets</a></li>
-                    <li class="col-3"><a class="item-color" href="#apropos">À Propos</a></li>
-                    <li class="col-3"><a class="item-color" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="container">
-            <h1 class="col-12 center margin-bottom">Kevin Vigne</h1>
-            <h2 class="col-12 center margin-bottom  ">Développeur Web et Web Mobile</h2>
-            <div class="row margin-bottom">
-                <!-- Projet Preview -->
-                <div class="col-5 center item-color fill-height">
-                    <p>Project 1 Preview</p>
-                </div>
-                <div class="col-5 center item-color fill-height">
-                    <p>Project 2 Preview</p>
-                </div>
-            </div>
-            <div class="row margin-bottom">
-                <div class="col-5 center item-color fill-height">
-                    <p>Project 3 Preview</p>
-                </div>
-                <div class="col-5 center item-color fill-height">
-                    <p>Project 4 Preview</p>
-                </div>
-            </div>
-            <!-- Mes Projets -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    
+    <!-- Changement de Thème de Page -->
+    <link rel="stylesheet" href="assets/css/style-switcher.css">
+    <link rel="stylesheet" href="assets/css/skins/color-1.css" class="alternate-style" title="color-1" >
+    <link rel="stylesheet" href="assets/css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="assets/css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="assets/css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="assets/css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+</head>
+<body>
+    <!-- Container principal -->
+    <div class="main-container">
+
+    </div> 
+    <div class="aside">
+        <div class="logo">
+            <a href="#"><span>A</span>tlas</a>
+        </div>
+        <div class="nav-toggler">
+            <span></span>
+        </div>
+        <!-- Barre de Navigation -->
+        <ul class="nav">
+            <li><a href="#home"><i class="fa fa-home"></i>Accueil</a></li>
+            <li><a href="#about"><i class="fa fa-user"></i>A Propos</a></li>
+            <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+            <li><a href="#contact"><i class="fa fa-comment"></i>Contact</a></li>
+        </ul>
+    </div>
+    <!-- Contenu Principal -->
+    <div class="main-content"> 
+        <!-- Accueil -->
+        <section class="home section active " id="home">
             <div class="container">
-                <h2 class="center margin-top margin-bottom" id="projets">Mes Projets</h2>
-                <div class="col-10 center margin-bottom item-color fill-height">
-                    <p>Projet 1</p>
-                </div>
-                <div class="col-10 center margin-bottom item-color fill-height">
-                    <p>Projet 2</p>
-                </div>
-                <div class="col-10 center margin-bottom item-color fill-height">
-                    <p>Projet 3</p>
-                </div>
-                <div class="col-10 center margin-bottom item-color fill-height">
-                    <p>Projet 4</p>
+                <div class="row">
+                    <div class="home-info padding-x">
+                        <h3 class="hello">Bonjour , je m'appelle <span class="name">Kevin Vigne</span></h3>
+                        <h3 class="my-profession">Je suis un <span class="typing">Développeur Web</span></h3>
+                        <p>Je suis un Développeur Web Junior , mon expertise est de créer des sites web responsives.</p>
+                        <a href="#contact" class="btn hire-me">Contactez-Moi</a>
+                    </div>
+                    <div class="home-img padding-x">
+                        <img src="assets/img/portfolio.png" alt="Photo de Moi">
+                    </div>
                 </div>
             </div>
-            <!-- À Propos -->
-            <div class="col-10 center item-color fill-height" id="apropos">
-                <p>A PROPOS</p>
-            </div> 
-        </main>
+        </section>
+        <!-- A Propos -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padding-x">
+                        <h2>A Propos de moi</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-content padding-x">
+                        <div class="row">
+                            <div class="about-text padding-x">
+                                <h3>Je suis Kevin Vigne et <span>Développeur Web et Web Mobile</span></h3>
+                                <p>Passionné par le développement web et les technologies du numérique, je suis un développeur web junior spécialisé en HTML, CSS et JavaScript. Après avoir découvert le code en créant mes premiers sites statiques, j’ai rapidement développé un fort intérêt pour la création d’interfaces modernes, interactives et accessibles.</p>
+                                <p>Autonome, curieux et toujours en quête d’apprentissage, je mets un point d’honneur à écrire un code propre, compréhensible et évolutif. Que ce soit pour des projets personnels ou en collaboration, je m'investis pleinement pour livrer des solutions web à la fois fonctionnelles et esthétiques.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="personnal-info padding-x">
+                                <div class="row">
+                                    <div class="info-item padding-x">
+                                        <p>Date de naissance : <span>31 Décembre 2000</span></p>
+                                    </div>
+                                    <div class="info-item padding-x">
+                                        <p>Email : <span>kev.vigne@gmail.com</span></p>
+                                    </div>
+                                    <div class="info-item padding-x">
+                                        <p>Numéro de Téléphone : <span>06 21 34 03 54</span></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="buttons padding-x">
+                                        <a href="#" class="btn">Télécharger mon CV</a>
+                                        <a href="#contact" class="btn hire-me">Contact</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education -->
+                            <div class="education padding-x">
+                                <h3 class="title">Education</h3>
+                                <div class="row">
+                                    <div class="timeline-box padding-x">
+                                        <div class="timeline shadow-dark">
+                                            <!-- Diplôme/Titre Pro -->
+                                            <div class="timeline-item">
+                                                <div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>Mai 2025 - Mai 2026
+                                                    </h3>
+                                                    <h4 class="timeline-title">Developpeur Web et Web Mobile</h4>
+                                                    <p class="timeline-text">Création de maquettes</p>
+                                                    <p class="timeline-text">Gestion de projet</p>
+                                                    <p class="timeline-text">Création de site web en responsive</p>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>Decembre 2021 - Septembre 2022
+                                                    </h3>
+                                                    <h4 class="timeline-title">Titre Professionnel de Technicien d'Assistance en Informatique</h4>
+                                                    <p class="timeline-text">Assister ou dépanner les utilisateurs</p>
+                                                    <p class="timeline-text">Mettre en service des équipements numériques</p>
+                                                    <p class="timeline-text">Intervenir sur les éléments de l'infrastructure</p>
+                                                </div>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i>2017-2018
+                                                    </h3>
+                                                    <h4 class="timeline-title">BAC Scientifique option Informatique et Science du Numérique</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PortFolio -->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padding-x">
+                        <h2>Portfolio</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-heading padding-x">
+                        <h2>Mes Dernières Réalisation</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-item padding-x">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="assets/img/starsea.PNG" alt="Image du projet Boutique StarSea">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-item padding-x">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="assets/img/jeux-horreur.PNG" alt="Image du projet Jeux Horreur ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-item padding-x">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="assets/img/bellebeachhouse.PNG" alt="Image du projet Restaurant Belles Beach House">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-item padding-x">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="assets/img/lesbellesbougies.PNG" alt="Image du projet Boutique Les Belles Bougies ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Contact -->
-        <footer class="margin-top margin-x">
-            <h2 class="center margin-bottom" id="contact">Contact</h2>
-            <ul class="list row item-color height-footer">
-                    <li class="col-4"><a class="col-12" href="https://github.com/KevinVigne"><i class="fa-brands fa-github fa-2xl"></i></a></li>
-                    <li class="col-4"><a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-                    <li class="col-4"><a href="mailto:kev.vigne@gmail.com"><i class="fa-solid fa-envelope fa-2xl"></i></a></li>
-                </ul>
-        </footer>
-        <script type="text/javascript" src="assets/js/script.js"></script>
-        <script src="https://kit.fontawesome.com/95cc56275a.js" crossorigin="anonymous"></script>
-    </body>
+         <section class="contact section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padding-x">
+                        <h2>Contact</h2>
+                    </div>
+                </div>
+                <h3 class="contact-title">Vous Avez Des Questions?</h3>
+                <h4 class="contact-sub-title">Je suis à votre disposition</h4>
+                <div class="row">
+                    <div class="contact-info-item padding-x">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <h4>Appellez-Moi</h4>
+                        <p>06 21 34 03 54</p>
+                    </div>
+                    <div class="contact-info-item padding-x">
+                        <div class="icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>kev.vigne@gmail.com</p>
+                    </div>
+                </div>
+                <h3 class="contact-title padding-x">Envoyez moi un email</h3>
+                <h4 class="contact-sub-title padding-x">Je vous répondrais dans les plus brefs délais</h4>
+                <!-- Formulaire de Contact -->
+                 <div class="contact-form padding-x">
+                    <div class="row">
+                        <div class="form-item col-6 padding-x">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Nom">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-6 padding-x">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12 padding-x">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Sujet">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12 padding-x">
+                            <div class="form-group">
+                                <textarea name="" class="form-control resize-off" cols="30" rows="10" id="" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12 padding-x">
+                            <div class="form-group">
+                                <button type="submit" class="btn">Envoyer le Message</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                 </div>
+            </div>
+         </section>
+    </div>
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-moon"></i>
+        </div>
+        <h4>Couleur du Thème</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/style-switcher.js"></script>
+</body>
 </html>
