@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* Importation des polices d'écriture Clicker Script et Poppins  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* Stocke toutes les couleurs utilisée dans le css */
 :root{
     --bg-black-900:#f2f2fc;
     --bg-black-100:#fdf9ff;
@@ -21,18 +24,16 @@ body{
 *{
     margin: 0;
     padding: 0;
-    outline: none;
     text-decoration: none;
     box-sizing: border-box;
 }
 ::before,::after{
     box-sizing: border-box;
 }
-/*Organisation de la Barre de navigation en En-tête*/
-.nav-header{
     list-style-type: none;
 }
 .section{
+    /* Met le fond en couleur stockée */
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
@@ -46,15 +47,20 @@ body{
     z-index: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    transition: all 0.3 ease;
 }
+/* Affiche au second Plan */
 .section.back-section{
     z-index: 1;
 }
+/* Affiche au premier Plan */
 .section.active{
     z-index: 2;
     opacity: 1;
+    /* Fais l'animation de glisser sur l'écran en 1 seconde */
     animation: slideSection 1s ease;
 }
+/*Permet de faire glisser les section à l'affichage*/
 @keyframes slideSection{
     0%{
         transform: translateX(100%);
@@ -111,7 +117,6 @@ body{
     flex-wrap:  wrap;
     margin-left: -15px;
     margin-right: -15px;
-    position: relative;
 }
 .btn{
     font-size: 16px;
@@ -128,7 +133,7 @@ body{
 .btn:hover{
     transform: scale(1.1);
 }
-.shadow-dark{
+.shadow{
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 .aside{
@@ -144,8 +149,9 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 10;
+    transition: all 0.3 ease;
 }
-.logo {
+/* .logo {
     position: absolute;
     top: 50px;
     font-size: 30px;
@@ -160,8 +166,9 @@ body{
     position:relative;
 }
 .logo a span{
-    font-family: 'Clicker Script', cursive;
+    font-family: 'Rubik';
     font-size: 40px;
+    font-weight: 800;
 }
 .logo a::before{
     content: '';
@@ -182,7 +189,7 @@ body{
     border-right: 5px solid var(--skin-color);
     top: 0;
     right: 0;
-}
+} */
 .nav-toggler{
     height: 40px;
     width: 45px;
@@ -196,13 +203,25 @@ body{
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 0.3 ease;
 }
 .nav-toggler span{
     height: 2px;
-    width: 10px;
+    width: 18px;
     background: var(--skin-color);
     display: inline-block;
     position: relative;
+}
+.nav-toggler.open span{
+    background-color: transparent;
+}
+.nav-toggler.open span::before{
+    transform: rotate( 45deg);
+    top : 0;
+}
+.nav-toggler.open span::after{
+    transform: rotate(-45deg);
+    top : 0;
 }
 .nav-toggler span::before{
     content: '';
@@ -243,6 +262,7 @@ body{
 .aside .nav li a{
     margin-right: 15px;
 }
+/*Accueil*/
 .home{
     min-height: 100vh;
     display: flex;
@@ -252,17 +272,17 @@ body{
     flex: 0 0 60%;
     max-width: 60%; 
 }
-h3.hello{
+.hello{
     font-size: 28px;
     margin: 15px 0;
 }
-h3.hello span{
+.hello span{
     font-family: 'Clicker Script',cursive;
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
 }
-h3.my-profession{
+.my-job{
     font-size:  30px;
     margin: 15px 0;
 }
@@ -301,12 +321,13 @@ h3.my-profession{
     left: -20px;
     top: -40px;
 }
+
 .home-img img{
     margin: auto;
     border-radius: 20px;
     height: 400px;
 }
-/* Cache le Contenu */
+/* Cache le Contenu  */
 .hidden{
     display: none;
 }
@@ -358,6 +379,7 @@ h3.my-profession{
     margin-left: 4px;
     display: inline-block;
 }
+/*Education*/
 .education{
     flex: 0 0 70%;
     max-width: 70%;
@@ -448,6 +470,9 @@ h3.my-profession{
     width: 100%;
     display: block;
 }
+.portfolio-img a:hover{
+    opacity: 0.5;
+}
 /* Contact */
 .contact-title{
     color: var(--skin-color);
@@ -527,18 +552,112 @@ textarea.form-control{
 .resize-off{
     resize: none;
 }
+/* Changement de Thème de Page */
+.style-switcher{
+    position: fixed;
+    right: 0;
+    top:60px;
+    padding: 15px;
+    width: 200px;
+    border: 1px solid var(--bg-black-50);
+    background:var(--bg-black-100);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3 ease;
+    transform: translateX(100%);
+}
+.style-switcher.open{
+    transform: translateX(-25px);
+}
+.style-switcher .s-icon{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    right: 100%;
+    border: 1px solid var(--bg-black-50);
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    border-radius: 50%;
+}
+.s-icon i{
+    line-height: 40px;
+
+}.style-switcher-toggler{
+    top:0;
+}
+.day-night{
+    top: 55px;
+}
+.style-switcher h4{
+    margin: 0 0 10px;
+    color: var(--text-black-700);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.colors span{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+.color-1{
+    background: #ec1839
+}
+.color-2{
+    background: #fa5b0f;
+}
+.color-3{
+    background: #37b182;
+}
+.color-4{
+    background: #1854b4  ;
+}
+.color-5{
+    background: #f021b2;
+}
+/* Format PC Portable */
 @media(max-width:1199px) {
+    .container{
+        padding-top: 70px;
+    }
     .aside{
         left: -270px;
     }
-    .main-content{
-        padding-left: 0 ;
+    .aside.open{
+        left: 0;
+    }
+    .nav-toggler{
+        display: flex;
+        left: 30px;
+    }
+    .nav-toggler.open{
+        left: 300px;
+    }
+    .section{
+        left: 0;
+    }
+    .section.open{
+        left: 270px;
     }
     .personnal-info .info-item p span{
         display:block;
         margin-left: 0;
     }
+    
 }
+/* Format Tablette */
 @media(max-width:991px){
     .home-info{
         flex: 0 0 100%;
@@ -548,6 +667,7 @@ textarea.form-control{
         display: none;
     }
 }
+/* Format Mobile */
 @media(max-width:767px){
     .education,.portfolio-item,.contact-info-item{
         flex: 0 0 100%;
