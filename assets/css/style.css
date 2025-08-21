@@ -28,7 +28,8 @@ body{
 ::before,::after{
     box-sizing: border-box;
 }
-ul{
+/*Organisation de la Barre de navigation en En-tête*/
+.nav-header{
     list-style-type: none;
 }
 .section{
@@ -339,10 +340,6 @@ h3.my-profession{
 }
 .buttons{
     margin-top: 30px;
-}
-.buttons .btn{
-    margin-right: 15px;
-    margin-top: 10px;
 }
 .info-item{
     flex: 0 0 50%;
